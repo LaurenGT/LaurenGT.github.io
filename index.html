@@ -1,48 +1,93 @@
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-  <meta charset="UTF-8">
-  <title>About Lauren Toothaker</title>
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 
-  <h1>Lauren Toothaker</h1>
-  <img src="https://picsum.photos/200/400" alt="randomly generated image from picsum.photos">
-  <p>Data Analyst with a background in Public Health and skills in SQL, Python and Excel working towards a certificate in Data Analytics from the University of Oregon’s Data Analytics Bootcamp (projected complete: June 2021). Detail oriented and driven to learn and provide well thought out reports. </p>
-  <p>My goal is to take large datasets and create approachable reports and visualizations to assist in improved decision making.  </p>
-  <ul>
-    <li>
-      <strong>Email: </strong>
-      <a href="mailto:ltoothakerw@gmail.com">LToothaker2@gmail.com</a>
-    </li>
-    <li>
-      <strong>LinkedIn: </strong>
-      <a href="https://www.linkedin.com/in/laurentoothaker/">/laurentoothaker</a>
-    </li>
-    <li>
-      <strong>Github: </strong>
-      <a href="https://github.com/LaurenGT">@LaurenGT</a>
-    </li>
-  </ul>
+    <title>About Lauren</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="header">
+        <h1>Lauren Toothaker</h1>
+        <p>Data Analyst</p>
+        </div>
+        <div class="row">
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <img src="https://picsum.photos/300/300" class="img-fluid" alt="random generated image from picsum" id="image-of-self">
+                        </div>
+                        <div class="col-sm-12 col-md-6" id="contact-info">
+                            <p>
+                            <strong>Email: </strong>
+                            <a href="mailto:ltoothakerw@gmail.com">LToothaker2@gmail.com</a>
+                            </p>
+                            <p>
+                            <strong>LinkedIn: </strong>
+                            <a href="https://www.linkedin.com/in/laurentoothaker/">/laurentoothaker</a>
+                            </p>
+                            <p>
+                            <strong>Github: </strong>
+                            <a href="https://github.com/LaurenGT">@LaurenGT</a>
+                            </p>
+                        </div>
+                    </div>
+                </div> 
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8">
+                        <p>Data Analyst with a background in Public Health and skills in SQL, Python and Excel working towards a certificate in Data Analytics from the University of Oregon’s Data Analytics Bootcamp (projected complete: June 2021). Detail oriented and driven to learn and provide well thought out reports. </p>
+                        <p>My goal is to take large datasets and create approachable reports and visualizations to assist in improved decision making.  </p>
+                    </div>
+                    <div class="col-md-2 col-lg-4">
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  <h3>See some of my work</h3>
-    <ul>
-        <li>
-            <a href="https://github.com/LaurenGT/project1">COVID-19 Mortality Rate Exploration - GutHub Repo</a>
-            <li>
-              <strong>Tools:</strong>
-              Jupyter Notebook, Census API, Pandas, MatPlotLib
-            </li>
-        </li>
-        <li>
-          <a href="https://github.com/LaurenGT/pewlett_hackard_employee_analysis">Mock Employee Dataset Analysis - GitHub Repo</a>
-          <li>
-            <strong>Tools:</strong>
-            PostgreSQL, pgAdmin, GenMyModel
-          </li>
-        </li>
-    </ul>
-</body>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Covid-19 Mortality Rates Exploration</h5>
+              <p class="card-text">Analysis of possible correlation between Emergency Room concentration and death rates by state.</p>
+              <p>Tools: Jupyter Notebook, Census API, Python, Pandas, MatPlotLib</p>
+              <a href="https://github.com/LaurenGT/COVID19_DeathRates" class="btn btn-primary">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Employee Database Analysis</h5>
+              <p class="card-text">Creation of employee database with mock employee dataset. Includes ERD, schema and optional queries.</p>
+              <p>Tools: PostgreSQL, pgAdmin, GenMyModel</p>
+              <a href="https://github.com/LaurenGT/pewlett_hackard_employee_analysis" class="btn btn-primary">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Global Weather Analysis</h5>
+              <p class="card-text">Weather analysis of 500+ randomly generated cities around the world to determine the impact of latitude on weather conditions. Also used to identifying possible travel destinations and lodging near the resulting cities.</p>
+              <p>Tools: Jupyter Notebook, Python, Pandas, APIs, gmaps </p>
+              <a href="https://github.com/LaurenGT/globalweather_analysis" class="btn btn-primary">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+  </body>
 </html>
